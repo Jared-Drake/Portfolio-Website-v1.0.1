@@ -21,7 +21,7 @@ const NavItems = () => {
 }
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false); // Removed the typo 'ul'
+    const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(prevIsOpen => !prevIsOpen);
@@ -44,10 +44,10 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
-            <nav className='p-5'>
-                <NavItems />
-            </nav>
+            <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-h-0'} overflow-hidden transition-max-height duration-300`}>
+                <nav className='p-5'>
+                    <NavItems />
+                </nav>
             </div>
         </header>
     );
