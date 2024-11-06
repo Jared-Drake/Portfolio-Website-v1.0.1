@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './sections/navbar.jsx';
-import Hero from './sections/hero.jsx'; // Changed the import path to match the correct file name
+import Hero from './sections/hero.jsx';
 
 const App = () => {
   return (
